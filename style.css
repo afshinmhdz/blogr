@@ -1,30 +1,95 @@
-:root{
-    /* Primary Color */
-    --Light-red-CTA-text: hsl(356, 100%, 66%);
---Very-light-red-CTA-hover-background: hsl(355, 100%, 74%);
---Very-dark-blue-headings-: hsl(208, 49%, 24%);
-    /* Neutral Color */
-    --White-text-: hsl(0, 0%, 100%);
-    --Grayish-blue-footer-text-: hsl(240, 2%, 79%);
-    --Very-dark-grayish-blue-body-copy-: hsl(207, 13%, 34%);
-    --Very-dark-black-blue-footer-background-: hsl(240, 10%, 16%);
-    /* Gradiant */
-    /* Background-gradient-Intro-CTA-mobile-nav: */
+:root {
+  /* Primary Color */
+  --Light-red-CTA-text: hsl(356, 100%, 66%);
+  --Very-light-red-CTA-hover-background: hsl(355, 100%, 74%);
+  --Very-dark-blue-headings-: hsl(208, 49%, 24%);
+  /* Neutral Color */
+  --White-text-: hsl(0, 0%, 100%);
+  --Grayish-blue-footer-text-: hsl(240, 2%, 79%);
+  --Very-dark-grayish-blue-body-copy-: hsl(207, 13%, 34%);
+  --Very-dark-black-blue-footer-background-: hsl(240, 10%, 16%);
+  /* Gradiant */
+  /* Background-gradient-Intro-CTA-mobile-nav: */
 
---Verylightred: hsl(13, 100%, 72%);
--Lightred:hsl(353, 100%, 62%);
+  --Verylightred: hsl(13, 100%, 72%);
+  --lightred: hsl(353, 100%, 62%);
 
-/* Background gradient - body: */
+  /* Background gradient - body: */
 
---Verydarkgrayblue:hsl(237, 17%, 21%);
---Verydarkdesaturatedblue: hsl(237, 23%, 32%);
+  --Verydarkgrayblue: hsl(237, 17%, 21%);
+  --Verydarkdesaturatedblue: hsl(237, 23%, 32%);
 }
 *,
 *::after,
-*::before{
-    box-sizing: border-box;
+*::before {
+  box-sizing: border-box;
+  margin: 0;
 }
-body{
-    /* font-family: 'Overpass', sans-serif;
-    font-family: 'Ubuntu', sans-serif; */
+body {
+  font-family: "Overpass", sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
 }
+/* Header Section Start */
+.head {
+  background-image: linear-gradient(var(--Verylightred), var(--lightred));
+  padding: 4rem 2rem;
+  border-radius: 0px 0px 0px 80px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.mobileNavBar {
+  display: flex;
+  justify-content: space-between;
+}
+.img-header {
+  position: absolute;
+  z-index: -1;
+  width: 1500px;
+  height: 1500px;
+  opacity: 1;
+  left: 0;
+  padding: 0px;
+  margin-left: -400px;
+  top: -350px;
+}
+.nav-btn {
+  /* logo and hamburger button */
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.title-header {
+  text-align: center;
+  margin-top: 6rem;
+  color: var(--White-text-);
+  margin-bottom: 2rem;
+}
+.text-header {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  color: var(--Grayish-blue-footer-text-);
+}
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-header {
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: var(--White-text-);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+.btn-header:hover {
+  background-color: var(--White-text-);
+  color: var(--Light-red-CTA-text);
+}
+
+/* Header Section End */
