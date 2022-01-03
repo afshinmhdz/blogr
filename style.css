@@ -29,6 +29,12 @@ body {
   font-family: "Overpass", sans-serif;
   /* font-family: 'Ubuntu', sans-serif; */
 }
+p {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2em;
+}
 /* Header Section Start */
 .head {
   background-image: linear-gradient(var(--Verylightred), var(--lightred));
@@ -93,3 +99,84 @@ body {
 }
 
 /* Header Section End */
+
+/* Section two start */
+.section {
+  text-align: center;
+  margin: 4rem 2rem;
+}
+.editor-img {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+.section-two h1 {
+  color: var(--Very-dark-blue-headings-);
+}
+.section-two p {
+  color: var(--Very-dark-grayish-blue-body-copy-);
+  margin: 2rem auto 3rem auto;
+}
+/* Section two ends */
+
+/* Section three start */
+.section-three {
+  background-color: var(--Verydarkgrayblue);
+  border-radius: 0 100px 0 100px;
+  position: relative;
+  margin-top: 15rem;
+ 
+}
+.section-three-header {
+  color: var(--White-text-);
+  font-weight: 600;
+}
+.section-three-text {
+  padding: 2rem 2rem 7rem 2rem;
+  color: var(--Grayish-blue-footer-text-);
+}
+.mobile-img {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  
+  padding: 0px;
+  margin-left: 10px;
+  top: -200px;
+}
+.circle-pattern{
+  position: relative;
+  z-index: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  padding: 0px;
+  margin-left: 10px;
+  top: 0px;
+  overflow: hidden;
+}
+/* Section three ends */
+/* footer start */
+.section-footer{
+  background-color: var(--Very-dark-black-blue-footer-background-);
+  border-radius: 0 100px 0 0;
+  color: var(--White-text-);
+  
+}
+ul{
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+}
+h3{
+  margin: 2rem auto;
+}
+li{
+  margin-bottom: .5rem;
+  cursor: pointer;
+  text-align: center;
+}
+#footer-header{
+  padding-top: 6rem;
+}
+/* footer end */
+
