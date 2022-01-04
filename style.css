@@ -8,6 +8,7 @@
   --Grayish-blue-footer-text-: hsl(240, 2%, 79%);
   --Very-dark-grayish-blue-body-copy-: hsl(207, 13%, 34%);
   --Very-dark-black-blue-footer-background-: hsl(240, 10%, 16%);
+  --subMenuBackgroundColor:#EFEFF1;
   /* Gradiant */
   /* Background-gradient-Intro-CTA-mobile-nav: */
 
@@ -92,6 +93,8 @@ h1 {
   letter-spacing: 0.05em;
   cursor: pointer;
   margin-bottom: 5rem;
+  transition:  0.5s;
+  
 }
 .btn-header:hover {
   background-color: var(--White-text-);
@@ -165,7 +168,8 @@ h1 {
 ul{
   list-style: none;
   text-align: center;
-  margin: 0 auto;
+  padding: 0;
+  padding:2rem 0;
 }
 h3{
   margin: 2rem auto;
@@ -174,9 +178,56 @@ li{
   margin-bottom: .5rem;
   cursor: pointer;
   text-align: center;
+  transition: opacity 0.3s;
 }
 #footer-header{
   padding-top: 6rem;
 }
+li:hover{
+  opacity: .5;
+}
 /* footer end */
+
+/* menu hamburger start */
+.hamburgerMenu{
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: var(--Very-dark-grayish-blue-body-copy-);
+}
+.subnav a{
+  display: block;
+  text-decoration: none;
+  color: var(--Very-dark-black-blue-footer-background-);
+}
+.subnav button{
+  border: none;
+  background-color: var(--White-text-);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.subnav-content{
+  margin: 1rem 2rem;
+  background-color: var(--subMenuBackgroundColor);
+  padding: 1rem;
+  border-radius: 10px;
+  
+}
+.subnav-content a{
+  padding-bottom: .5rem;
+}
+.subnav-login{
+  border-top: 1px solid var(--Grayish-blue-footer-text-);
+  margin:2rem 2rem 0 2rem ;
+  padding: 1.5rem 0;
+}
+.sign-up-btn{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  background-image: linear-gradient(to right, var(--Verylightred), var(--lightred));
+  color: var(--White-text-);
+  padding: 1rem 3rem;
+  border-radius: 100px;
+}
+/* menu hamburger end */
 
